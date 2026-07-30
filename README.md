@@ -249,3 +249,21 @@ Final 1080×1440, preview 720×960, H.264, silent. The full behavior contract li
 ### License
 
 [MIT](LICENSE). The bundled Ma Shan Zheng font is under the [SIL Open Font License](public/fonts/OFL-MaShanZheng.txt).
+
+
+## 🧒 儿童绘本模式
+
+支持生成可爱童话风格的绘本动画。区别于默认的手绘日记风：
+
+| 维度 | 日记风 | 绘本风 |
+|------|--------|--------|
+| 画风 | 手绘黑白→彩色 | 水彩/蜡笔/可爱全彩 |
+| 字幕 | 书写体 | 圆体/胖胖体 |
+| BGM | 钢琴忧郁 | 轻快温馨 |
+| 旁白 | 独白 | 讲故事语气 |
+| 转场 | 卷页 | 淡入/溶解 |
+
+通过 `--mode children` 启用：
+```bash
+python3 scripts/run_story_video.py --text "..." --mode children --bgm cute
+```
